@@ -1,5 +1,9 @@
+import Header from "./Header";
+
 function AddPost() {
-    return <h1>add post</h1>
+    return (
+        <Header />
+    )
 }
 
 export default AddPost;
