@@ -1,0 +1,15 @@
+@import '~bootstrap/scss/functions';
+@import 'variables';
+@import '~bootstrap/scss/bootstrap-grid';
+@import 'normalize';
+
+@import 'pages/app';
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
