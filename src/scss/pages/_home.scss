@@ -21,6 +21,12 @@
       margin-top: 22px;
       display: flex;
       align-items: center;
+      user-select: none;
+      cursor: pointer;
+
+      &:hover .icon {
+        animation: shake .2s linear infinite alternate;
+      }
 
       .icon {
         @include Border;
@@ -43,4 +49,9 @@
       }
     }
   }
+}
+
+@keyframes shake {
+  0% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
 }
