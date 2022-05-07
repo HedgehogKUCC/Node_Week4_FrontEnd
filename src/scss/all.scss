@@ -1,55 +1,27 @@
+$primary: #03438D;
+$info: #E2EDFA;
 $black: #000400;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 868px,
+  xl: 869px,
+  xxl: 870px
+);
+
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/bootstrap-grid';
 @import 'normalize';
+@import 'cus-reset';
 
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Paytone+One&display=swap');
+
+@import 'utilities';
+
+@import 'component/form';
+@import 'component/post';
+@import 'component/button';
+
+@import 'layout/header';
 @import 'pages/home';
-
-html {
-  background: url("../images/bg.svg") repeat center;
-  color: $black;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  margin: 0;
-  font-size: 1.625rem;
-  font-family: 'Paytone One', sans-serif;
-}
-
-.header {
-  padding: 15px 0;
-  background: var(--bs-white);
-  border-bottom: 3px solid $black;
-
-  .logo {
-    align-self: center;
-  }
-
-  .user {
-    display: flex;
-    align-items: center;
-    margin: 0;
-
-    &__avatar {
-      display: block;
-      margin-right: 10px;
-    }
-
-    &__name {
-      font-family: 'Azeret Mono', monospace;
-      margin: 0;
-      padding-bottom: 5px;
-      border-bottom: 2px solid $black;
-    }
-  }
-}
