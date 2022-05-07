@@ -1,7 +1,7 @@
 .form-select {
+  @include Border;
   display: block;
   width: 100%;
-  border: 2px solid $black;
   padding: 12px 16px;
   color: $black;
   background-color: #fff;
@@ -17,9 +17,9 @@
 }
 
 .form-control {
+  @include Border;
   display: block;
   width: 100%;
-  border: 2px solid $black;
   padding: 12px 16px;
   outline: none;
 }

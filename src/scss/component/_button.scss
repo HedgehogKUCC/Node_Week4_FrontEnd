@@ -1,4 +1,6 @@
 .btn {
+  @include Border;
+  @include BorderRadius;
   display: block;
   width: 100%;
   font-weight: bold;
@@ -11,12 +13,9 @@
   -moz-user-select: none;
   user-select: none;
   background-color: transparent;
-  border: 2px solid $black;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
   font-size: 1rem;
   font-family: 'Azeret Mono', monospace;
-  border-radius: 8px;
   box-shadow: -2px 2px 0px $black;
   transition: all 0.5s;
 
