@@ -1,4 +1,5 @@
 import Header from "./Header";
+import UserFeature from "./UserFeature";
 import avatar from "./images/user.png";
 import avatar1 from "./images/user1.png";
 import template from "./images/template.png";
@@ -70,25 +71,7 @@ function HomePage() {
                         </div>
                     </div>
                     <div className="col-4">
-                        <div className="user__feature">
-                            <button type="button" className='btn btn-primary'>張貼動態</button>
-                            <div className='info'>
-                                <img src={avatar} alt=""/>
-                                <h5>邊緣小傑</h5>
-                            </div>
-                            <div className="follow">
-                                <div className='icon'>
-                                    <i className="bi bi-bell"></i>
-                                </div>
-                                <h5>追蹤名單</h5>
-                            </div>
-                            <div className="like">
-                                <div className='icon'>
-                                    <i className="bi bi-hand-thumbs-up"></i>
-                                </div>
-                                <h5>我按讚的文章</h5>
-                            </div>
-                        </div>
+                        <UserFeature />
                     </div>
                 </div>
             </main>
