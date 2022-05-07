@@ -1,0 +1,22 @@
+html {
+  background: url("../images/bg.svg") repeat center;
+  color: $black;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  font-family: 'Paytone One', sans-serif;
+}
+
+h1 {
+  font-size: 1.625rem;
+}
