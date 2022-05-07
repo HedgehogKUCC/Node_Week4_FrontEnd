@@ -1,1 +1,46 @@
+.icon-search {
+  width: 42px;
+  height: 42px;
+  background: $primary;
+  border: 2px solid $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
 
+.user {
+  &__feature {
+    padding: 32px 24px;
+    border: 2px solid $black;
+    background: $white;
+
+    .info,
+    .follow,
+    .like {
+      margin-top: 22px;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        width: 46px;
+        height: 46px;
+        border: 2px solid $black;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 28px;
+        margin-right: 16px;
+        background: $info;
+      }
+    }
+
+    .info {
+      margin-top: 24px;
+
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+}
