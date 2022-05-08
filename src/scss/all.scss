@@ -1,19 +1,9 @@
-$primary: #03438D;
-$info: #E2EDFA;
-$black: #000400;
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 868px,
-  xl: 869px,
-  xxl: 870px
-);
+@import 'helper/cus-variable';
 
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/bootstrap-grid';
+
 @import 'helper/reboot';
-// @import 'normalize';
 @import 'helper/cus-reset';
 
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Paytone+One&display=swap');
