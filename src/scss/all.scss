@@ -21,7 +21,7 @@ $container-max-widths: (
 @import 'mixins/border';
 @import 'mixins/border-radius';
 
-@import 'utilities';
+@import 'helper/utilities';
 
 @import 'component/form';
 @import 'component/post';
