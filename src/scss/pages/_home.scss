@@ -1,7 +1,7 @@
 .icon-search {
   @include Border;
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   background: $primary;
   display: flex;
   justify-content: center;
@@ -9,49 +9,9 @@
   color: $white;
 }
 
-.user {
-  &__feature {
-    @include Border;
-    padding: 32px 24px;
-    background: $white;
-
-    .info,
-    .follow,
-    .like {
-      margin-top: 22px;
-      display: flex;
-      align-items: center;
-      user-select: none;
-      cursor: pointer;
-
-      &:hover .icon {
-        animation: shake .2s linear infinite alternate;
-      }
-
-      .icon {
-        @include Border;
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 50px;
-        font-size: 28px;
-        margin-right: 16px;
-        background: $info;
-      }
-    }
-
-    .info {
-      margin-top: 24px;
-
-      img {
-        margin-right: 16px;
-      }
-    }
+.filterBar {
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    flex-direction: row;
   }
-}
-
-@keyframes shake {
-  0% { transform: rotate(-10deg); }
-  100% { transform: rotate(10deg); }
 }
