@@ -1,0 +1,73 @@
+.user {
+  &__feature {
+    @include Border;
+    padding: 32px 24px;
+    background: $white;
+
+    .info,
+    .follow,
+    .like {
+      margin-top: 22px;
+      display: flex;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+
+      &:hover .icon {
+        animation: shake .2s linear infinite alternate;
+      }
+
+      .icon {
+        @include Border;
+        @include BorderRadius(50%);
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 28px;
+        margin-right: 16px;
+        background: $info;
+      }
+    }
+
+    .info {
+      margin-top: 24px;
+
+      img {
+        margin-right: 16px;
+      }
+    }
+
+    &--mobile {
+      @include Border(3px);
+      @include BorderRadius(32px);
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      padding: 9px 18px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #EFECE7;
+
+      .icon {
+        @include Border(3px);
+        @include BorderRadius(50%);
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+        text-align: center;
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@keyframes shake {
+  0% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
+}

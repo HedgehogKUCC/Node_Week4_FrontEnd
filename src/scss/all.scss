@@ -28,5 +28,7 @@ $container-max-widths: (
 @import 'component/button';
 
 @import 'layout/header';
+@import "layout/user-feature";
+
 @import 'pages/home';
 @import 'pages/add-post';
