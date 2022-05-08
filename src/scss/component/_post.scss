@@ -1,7 +1,6 @@
 .post {
   @include Border;
   @include BorderRadius;
-  margin-top: 16px;
   padding: 24px;
   background: $white;
   box-shadow: 0px 3px 0px $black;
@@ -27,11 +26,44 @@
     }
   }
 
-  &__content {
-    margin-top: 16px;
+  &.no {
+    padding: 0;
+
+    p {
+      border-top: 2px solid $black;
+      padding: 32px 0;
+      color: #9B9893;
+      text-align: center;
+      user-select: none;
+    }
+  }
+}
+
+.circle {
+  @include Border(1px, #707070);
+  @include BorderRadius(50%);
+  width: 9px;
+  height: 9px;
+
+  &__group {
+    padding: 16px;
+    display: flex;
+    align-items: center;
   }
 
-  &__image {
-    margin-top: 16px;
+  &-red {
+    background: #DE4B63;
+  }
+
+  &-orange {
+    background: #FAA722;
+  }
+
+  &-green {
+    background: #83C51D;
+  }
+
+  &:not(:last-child) {
+    margin-right: 6px;
   }
 }
