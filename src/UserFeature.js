@@ -1,11 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import avatar from "./images/user.png";
 
 function UserFeature() {
+    let navigate = useNavigate();
+
     return (
         <>
             <div className="user__feature d-none d-md-block">
-                <button type="button" className='btn btn-primary'>張貼動態</button>
+                <button
+                    type="button"
+                    className='btn btn-primary'
+                    onClick={() => navigate("/add-post")}
+                >張貼動態</button>
                 <div className='info'>
                     <img src={avatar} alt=""/>
                     <h5>邊緣小傑</h5>
