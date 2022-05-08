@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import avatar from "./images/user.png";
 
 function UserFeature() {
@@ -25,7 +26,9 @@ function UserFeature() {
             <div className='d-block d-md-none'>
                 <div className="user__feature--mobile">
                     <div className='icon'>
-                        <i className="bi bi-house-door"></i>
+                        <Link to='/'>
+                            <i className="bi bi-house-door"></i>
+                        </Link>
                     </div>
                     <div className='icon'>
                         <i className="bi bi-bell"></i>
@@ -33,8 +36,10 @@ function UserFeature() {
                     <div className='icon'>
                         <i className="bi bi-hand-thumbs-up"></i>
                     </div>
-                    <div className="icon text-white bg-primary">
-                        <i className="bi bi-plus-lg"></i>
+                    <div className="icon bg-primary">
+                        <Link className='text-white' to='/add-post'>
+                            <i className="bi bi-plus-lg"></i>
+                        </Link>
                     </div>
                 </div>
             </div>

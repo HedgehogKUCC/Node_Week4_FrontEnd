@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import userImg from "./images/user.png";
 
 function Header() {
@@ -6,7 +7,7 @@ function Header() {
             <div className='container'>
                 <div className="d-flex justify-content-between align-content-center">
                     <div className="logo">
-                        <h1>MetaWall</h1>
+                        <h1><Link to='/'>MetaWall</Link></h1>
                     </div>
                     <div className="user">
                         <img className='user__avatar' src={userImg} alt=""/>
